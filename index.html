@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>Markus C. | Portfólio</title>
+    <meta name="description" content="Markus">
+
+    <meta name="keywords" content="">
+    <meta name="author" content="Markus Corazzione">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap-select.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="asset/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/odometer.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/lightbox.min.css">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="asset/css/animate.min.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="asset/font/fonts.css">
+    
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="asset/icons/icomoon/style.css">
+    
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="asset/images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="asset/images/logo/favicon.png">
+
+    <style>
+        /* Ensure logo-2 renders at correct size - override global img styles */
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            height: 32px;
+            width: 114px;
+        }
+        .logo-wrap img {
+            width: 114px !important;
+            height: 32px !important;
+            max-width: none !important;
+            max-height: none !important;
+            display: block !important;
+            object-fit: contain !important;
+            flex-shrink: 0 !important;
+        }
+        
+        /* Alert styles */
+        .flat-alert {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid;
+        }
+        
+        .flat-alert.msg-success {
+            background-color: rgba(76, 175, 80, 0.15);
+            border-left-color: #4CAF50;
+            color: #4CAF50;
+        }
+        
+        .flat-alert.msg-error {
+            background-color: rgba(244, 67, 54, 0.15);
+            border-left-color: #F44336;
+            color: #F44336;
+        }
+        
+        .flat-alert .close {
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 0;
+            margin-left: 15px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .flat-alert .close:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body class="counter-scroll">
+
+    <!-- Start Wrapper -->
+    <div id="wrapper">
+
+        <video class="body-overlay" muted autoplay loop playsinline>
+            <source src="asset/images/bg-3d/video-6.mp4" type="video/mp4">
+        </video>
+
+        <!-- tf-btn-menu -->
+        <div class="tf-btn-menu d-xl-none">
+            <img src="asset/icons/dashboard.svg" alt="">
+        </div>
+        <!-- /tf-btn-menu -->
+ 
+        <!-- tf-sidebar-menu -->
+        <div class="tf-sidebar-menu tf-canvas">
+            <div class="overlay"></div>
+            <div class="sidebar-menu-inner">
+                <div class="sidebar-wrap">
+                    <div class="sidebar-heading">
+                        <div class="heading text-body-1 dot-before">Menu</div>
+                        <span class="close-canvas">
+                            <i class="icon icon-times-solid"></i>
+                        </span>
+                    </div>
+                    <ul class="sidebar-nav nav-scroll">
+                        <li>
+                            <a class="scroll-to active" href="#home">
+                                <i class="icon icon-home-solid"></i><span class="text-body-2">Início</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#experience">
+                                <i class="icon icon-toolbox-solid"></i><span class="text-body-2">Experiência</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#works">
+                                <i class="icon icon-tasks-solid"></i><span class="text-body-2">Trabalhos Selecionados</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#services">
+                                <i class="icon icon-stream-solid"></i><span class="text-body-2">Serviços</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#about">
+                                <i class="icon icon-user-solid"></i><span class="text-body-2">Sobre</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#testimonial">
+                                <i class="icon icon-poll-h-solid"></i><span class="text-body-2">Depoimentos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#partners">
+                                <i class="icon icon-user-friends-solid"></i><span class="text-body-2">Parceiros</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#pricing">
+                                <i class="icon icon-tags-solid"></i><span class="text-body-2">Preços</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#faqs">
+                                <i class="icon icon-comment-alt-solid"></i><span class="text-body-2">FAQs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="scroll-to" href="#contact">
+                                <i class="icon icon-envelope-solid"></i><span class="text-body-2">Contato</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-social">
+                    <div class="heading text-body-1 dot-before">Redes Sociais</div>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://x.com/markuscorazon"><i class="icon icon-twitter-x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/Corazzione"><i class="icon icon-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/corazzione"><i class="icon icon-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/corazzione1"><i class="icon icon-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /tf-sidebar-menu -->
+
+        <!-- tf-setting-color -->
+        <div class="tf-setting-color tf-canvas">
+            <div class="btn-setting-color">
+                <i class="icon icon-cog-solid"></i>
+            </div>
+            <div class="inner">
+                <div class="overlay"></div>
+                <div class="setting-color-option">
+                    <span class="close-canvas">
+                        <i class="icon icon-times-solid"></i>
+                    </span>
+                    <h2 class="heading">Configuração</h2>
+                    <div class="settings-color-option-inner">
+                        <h6 class="title">CORES</h6>
+                        <div class="settings-color list-choose">
+                            <a href="javascript:void(0);" class="choose-item active"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                            <a href="javascript:void(0);" class="choose-item"></a>
+                        </div>
+    
+                        <ul class="settings-themes" style="display:none;">
+
+                        <h6 class="title">FORMAS TRIDIMENSIONAIS</h6>
+                        <ul class="settings-themes">
+                            <li><a href="home2.html" class="active">Líquidos Ondulados</a></li>
+                            <li><a href="home2-v2.html">Bola Abstrata 3D</a></li>
+                            <li><a href="home2-v3.html">Ondas de Água</a></li>
+                            <li><a href="home2-v4.html">Esfera de Linhas da Terra</a></li>
+                            <li><a href="home2-v5.html">Cor Sólida</a></li>
+                            <li><a href="home2-v6.html">Cordas Simples</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /tf-setting-color -->
+
+        <!-- right-nav -->
+        <ul class="right-nav nav-scroll">
+            <li>
+                <a class="scroll-to" href="#home">
+                    <i class="icon icon-home-solid"></i>
+                    <span class="tooltip text-body-3">Início</span>
+                </a>
+            </li>
+            <li>
+                <a class="scroll-to" href="#works">
+                    <i class="icon icon-tasks-solid"></i>
+                    <span class="tooltip text-body-3">Trabalhos</span>
+                </a>
+            </li>
+            <li>
+                <a class="scroll-to" href="#services">
+                    <i class="icon icon-stream-solid"></i>
+                    <span class="tooltip text-body-3">Serviços</span>
+                </a>
+            </li>
+            <li>
+                <a class="scroll-to" href="#about">
+                    <i class="icon icon-user-solid"></i>
+                    <span class="tooltip text-body-3">Sobre</span>
+                </a>
+            </li>
+            <li>
+                <a class="scroll-to" href="#testimonial">
+                    <i class="icon icon-poll-h-solid"></i>
+                    <span class="tooltip text-body-3">Depoimentos</span>
+                </a>
+            </li>
+            <li>
+                <a class="scroll-to" href="#pricing">
+                    <i class="icon icon-tags-solid"></i>
+                    <span class="tooltip text-body-3">Preços</span>
+                </a>
+            </li>
+            <li>
+                <a class="scroll-to" href="#faqs">
+                    <i class="icon icon-comment-alt-solid"></i>
+                    <span class="tooltip text-body-3">FAQs</span>
+                </a>
+            </li>
+            <li>
+                <a class="scroll-to" href="#contact">
+                    <i class="icon icon-envelope-solid"></i>
+                    <span class="tooltip text-body-3">Contato</span>
+                </a>
+            </li>
+        </ul>
+        <!-- /right-nav -->
+
+        <div class="line-page"></div>
+        
+        <!-- main-content -->
+        <div class="main-content relative">
+            <!-- section-header -->
+            <div class="section-has-dot section-header">
+                <span></span>
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                            <div class="header-inner">
+                                <div class="logo-wrap">
+                                    <img src="asset/images/logo/logo-2.svg" alt="">
+                                </div>
+                                <div class="box-status">
+                                    <div class="dot"></div>
+                                    <div class="text-body-1">Disponível para <span class="number">3 projetos</span></div>
+                                </div>
+                                <div class="header-right">
+                                    <div class="text-body-2 fw-medium place">Brasília, DF</div>
+                                    <div class="text-body-2 fw-medium time">Pronto para novos desafios</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /section-header -->
+            <!-- wrapper-content -->
+            <div class="wrapper-content-1 relative overflow-hidden">
+                <!-- section-banner -->
+                <div class="section-has-dot section-banner style-lg" id="home">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="image">
+                                       <div class="avatar avatar-wrap">
+                                            <img class="lazyload avatar-bg" src="asset/images/avatar/avatar-full.png" data-src="asset/images/avatar/avatar-full.png" alt="">
+                                            <img class="lazyload avatar-no-bg" style="display: none;" src="asset/images/avatar/avatar-1.png" data-src="asset/images/avatar/avatar-1.png" alt="">
+                                        </div>
+                                        <img class="lazyload signature wow fadeInLeft" src="asset/images/section/signature-1.png" data-src="asset/images/section/signature-1.png" alt="">
+                <!-- <div class="text-signature">Jayden</div> -->
+                                    </div>
+                                    <div class="infor">
+                                        <div class="text sub-heading split-text effect-right">
+                                            Olá, me chamo <span class="fw-medium">Markus Corazzione</span>. <br>
+                                            Estudo <span class="fw-medium">Web-designer</span> e <span class="fw-medium">Desenvolvimento</span> 
+                                        </div>
+                                    </div>
+                                    <ul class="social-links style-1 justify-content-center wow fadeInUp">
+                                        <li>
+                                            <a href="https://x.com/markuscorazon"><i class="icon icon-twitter-x"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://dribbble.com/Corazzione"><i class="icon icon-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/corazzione"><i class="icon icon-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/corazzione1"><i class="icon icon-facebook-f"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="bottom">
+                                        <a href="#contact" class="btns-link wow fadeInUp">
+                                            <div class="text-body-1 text">Comece um projeto</div>
+                                            <i class="icon icon-arrow-top-right"></i>
+                                        </a>
+                                        <a href="#works" class="btns-link1 wow fadeInUp">
+                                            <div class="text-body-1 text">Veja meus trabalhos</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section-banner -->
+                <!-- section-hero -->
+                <div class="section-has-dot section-hero">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="indicators">
+                                        <div class="indicators-wrap">
+                                            <div class="indicators-item wow fadeInUp">
+                                                <div class="text-body-1 dot-before indicators-title">Cafés Consumidos</div>
+                                                <div class="wg-counter style-1">
+                                                    <div class="flex align-items-center justify-content-end">
+                                                        <div class="odometer text-display-2" data-number="10">70</div>
+                                                        <span class="sub-odo text-display-2">K+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="indicators-item wow fadeInUp" data-wow-delay="0.1s">
+                                                <div class="text-body-1 dot-before indicators-title">Produtividade</div>
+                                                <div class="wg-counter style-1">
+                                                    <div class="flex align-items-center justify-content-end">
+                                                        <div class="odometer text-display-2" data-number="98">10</div>
+                                                        <span class="sub-odo text-display-2">%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="more-infor">
+                                            <div class="customer-box">
+                                                <div class="image">
+                                                    <img src="asset/images/avatar/avatar-3.png" alt="">
+                                                    <img src="asset/images/avatar/avatar-4.png" alt="">
+                                                    <img src="asset/images/avatar/avatar-5.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="ratings">
+                                                        <i class="icon icon-star-solid"></i>
+                                                        <i class="icon icon-star-solid"></i>
+                                                        <i class="icon icon-star-solid"></i>
+                                                        <i class="icon icon-star-solid"></i>
+                                                        <i class="icon icon-star-solid"></i>
+                                                    </div>
+                                                    <div class="text-body-2 fw-medium text">10 Clientes</div>
+                                                </div>
+                                            </div>
+                                            <div class="worldwide style-1 text-body-1">
+                                                <div class="text">
+                                                    Disponível para <span>Projetos Internacionais</span>
+                                                </div>
+                                                <div class="line"></div>
+                                                <i class="icon icon-global"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section-hero -->
+                <!-- section-experiences -->
+                <section class="section-has-dot section-experiences v2" id="experience">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="text-body-2 dot-before subtitle">Experiências</div>
+                                    <h4 class="desc text-color-change text-tab">
+                                        <span></span>  Enquanto estudo, aplico meus conhecimentos no desenvolvimento da minha própria marca.
+                                    <div class="experiences-wrap">
+                                        <div class="item scrolling-effect effectLeft">
+                                            <div class="sub-heading text">Silks</div>
+                                            <div class="job-title">
+                                                <h6 class="title">Designer Gráfico</h6>
+                                                <div class="text-body-2 time-line type-tags">2022 - Presente</div>
+                                            </div>
+                                        </div>
+                                        <div class="item scrolling-effect effectLeft">
+                                            <div class="sub-heading text">Silks</div>
+                                            <div class="job-title">
+                                                <h6 class="title">Web Designer</h6>
+                                                <div class="text-body-2 time-line type-tags">2022 - Presente</div>
+                                            </div>
+                                        </div>
+                                        <div class="item scrolling-effect effectLeft">
+                                            <div class="sub-heading text">Hidden</div>
+                                            <div class="job-title">
+                                                <h6 class="title">Videomaker</h6>
+                                                <div class="text-body-2 time-line type-tags">2022 - Presente</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-experiences -->
+                <!-- section-selected-works -->
+                <section class="section-has-dot section-selected-works" id="works">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="banner-slider">
+                                        <div class="text-container scroll-banners effect-right">
+                                            <span class="banner-text text-display-2 fw-medium">Meus Trabalhos</span>
+                                            <span class="banner-img"><span class="dot-circle"></span></span>
+                                            <span class="banner-text text-display-2 fw-medium">Meus Trabalhos</span>
+                                            <span class="banner-img"><span class="dot-circle"></span></span>
+                                            <span class="banner-text text-display-2 fw-medium">Meus Trabalhos</span>
+                                            <span class="banner-img"><span class="dot-circle"></span></span>
+                                            <span class="banner-text text-display-2 fw-medium">Meus Trabalhos</span>
+                                            <span class="banner-img"><span class="dot-circle"></span></span>
+                                            <span class="banner-text text-display-2 fw-medium">Meus Trabalhos</span>
+                                            <span class="banner-img"><span class="dot-circle"></span></span>
+                                            <span class="banner-text text-display-2 fw-medium">Meus Trabalhos</span>
+                                            <span class="banner-img"><span class="dot-circle"></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="works-wrap style-1">
+                                        <div class="works-item scrolling-effect effectLeft">
+                                            <a class="image" href="asset/images/section/works-4.jpg" data-lightbox="example-1">
+                                                <img class="lazyload" src="asset/images/section/works-4.jpg" data-src="asset/images/section/works-4.jpg" alt="">
+                                            </a>
+                                            <div class="content">
+                                                <div class="infor">
+                                                    <div class="sub-heading sub">Design de Website</div>
+                                                    <h3 class="title">
+                                                        <a href="#">Silks Clothing </a>
+                                                    </h3>
+                                                    <a href="#" class="link date text-body-2 type-tags">Mar 2025</a>
+                                                </div>
+                                                <a href="https://silksclothing.lojavirtualnuvem.com.br/" class="btn-links">
+                                                    <i class="icon icon-arrow-top-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="works-item scrolling-effect effectLeft">
+                                            <a class="image" href="asset/images/section/works-5.jpg" data-lightbox="example-1">
+                                                <img class="lazyload" src="asset/images/section/works-5.jpg" data-src="asset/images/section/works-5.jpg" alt="">
+                                            </a>
+                                            <div class="content">
+                                                <div class="infor">
+                                                    <div class="sub-heading sub">Design de estampas</div>
+                                                    <h3 class="title">
+                                                        <a href="#">Silks Clothing</a>
+                                                    </h3>
+                                                    <a href="https://silksclothing.lojavirtualnuvem.com.br/" class="link date text-body-2 type-tags">Mar 2025</a>
+                                                </div>
+                                                <a href="#" class="btn-links">
+                                                    <i class="icon icon-arrow-top-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="works-item scrolling-effect effectLeft">
+                                            <a class="image" href="asset/images/section/works-6.jpg" data-lightbox="example-1">
+                                                <img class="lazyload" src="asset/images/section/works-6.jpg" data-src="asset/images/section/works-6.jpg" alt="">
+                                            </a>
+                                            <div class="content">
+                                                <div class="infor">
+                                                    <div class="sub-heading sub">Mobile</div>
+                                                    <h3 class="title">
+                                                        <a href="#">Criação de Apps Básicos iOS</a>
+                                                    </h3>
+                                                    <a href="#" class="link date text-body-2 type-tags">Jan 2025</a>
+                                                </div>
+                                                <a href="#" class="btn-links">
+                                                    <i class="icon icon-arrow-top-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="box-gradient1 img_bg-1"></div>
+                <!-- /section-selected-works -->
+                <!-- section-services -->
+                <div class="section-has-dot section-services" id="services">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="section-services-inner">
+                                    <div class="text-body-2 dot-before subtitle">Meus Serviços</div>
+                                    <div class="services-wrap accordion-wrap" id="accordion-services">
+                                        <div class="item active accordion-item" data-bs-toggle="collapse" role="button" 
+                                            data-bs-target="#collapse-services-1" aria-expanded="true" aria-controls="collapse-services-1">
+                                            <div class="heading accordion-head">
+                                                <div class="icon">
+                                                    <i class="icon-pen-nib-solid"></i>
+                                                </div>
+                                                <div class="text-display-2 title fw-medium">
+                                                    <div class="split-text effect-right">Design Gráfico</div>
+                                                    <span class="text-body-1">(01)</span>
+                                                </div>
+                                            </div>
+                                            <div id="collapse-services-1" class="accordion-collapse collapse show" data-bs-parent="#accordion-services">
+                                                <div class="list-text">
+                                                    <div class="text sub-heading">Tipografia, posts e banners para redes sociais</div>
+                                                    <div class="text sub-heading">Design de Logo</div>
+                                                    <div class="text sub-heading">Capas, mockups e materiais digitais</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item collapsed accordion-item" data-bs-toggle="collapse" role="button" 
+                                            data-bs-target="#collapse-services-2" aria-expanded="true" aria-controls="collapse-services-2">
+                                            <div class="heading accordion-head">
+                                                <div class="icon">
+                                                    <i class="icon-ribbon-solid"></i>
+                                                </div>
+                                                <div class="text-display-2 title fw-medium">
+                                                    <div class="split-text effect-right">UI/UX Design</div>
+                                                    <span class="text-body-1">(02)</span>
+                                                </div>
+                                            </div>
+                                            <div id="collapse-services-2" class="accordion-collapse collapse" data-bs-parent="#accordion-services">
+                                                <div class="list-text">
+                                                    <div class="text sub-heading">Layouts de landing pages no Figma </div>
+                                                    <div class="text sub-heading">Protótipos navegáveis simples</div>
+                                                    <div class="text sub-heading">Melhoria visual de interfaces já existentes</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item collapsed accordion-item" data-bs-toggle="collapse" role="button" 
+                                            data-bs-target="#collapse-services-3" aria-expanded="true" aria-controls="collapse-services-3">
+                                            <div class="heading accordion-head">
+                                                <div class="icon">
+                                                    <i class="icon-crop-alt-solid"></i>
+                                                </div>
+                                                <div class="text-display-2 title fw-medium">
+                                                    <div class="split-text effect-right">Webflow Dev</div>
+                                                    <span class="text-body-1">(03)</span>
+                                                </div>
+                                            </div>
+                                            <div id="collapse-services-3" class="accordion-collapse collapse" data-bs-parent="#accordion-services">
+                                                <div class="list-text">
+                                                    <div class="text sub-heading">Criação de landing pages com templates próprios</div>
+                                                    <div class="text sub-heading">Customização de seções, textos e imagens</div>
+                                                    <div class="text sub-heading">Ajustes básicos de responsividade</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item collapsed accordion-item" data-bs-toggle="collapse" role="button" 
+                                            data-bs-target="#collapse-services-4" aria-expanded="true" aria-controls="collapse-services-4">
+                                            <div class="heading accordion-head">
+                                                <div class="icon">
+                                                    <i class="icon-chess-knight-solid"></i>
+                                                </div>
+                                                <div class="text-display-2 title fw-medium">
+                                                    <div class="split-text effect-right">Framer Dev</div>
+                                                    <span class="text-body-1">(04)</span>
+                                                </div>
+                                            </div>
+                                            <div id="collapse-services-4" class="accordion-collapse collapse" data-bs-parent="#accordion-services">
+                                                <div class="list-text">
+                                                    <div class="text sub-heading">Montagem de sites one-page</div>
+                                                    <div class="text sub-heading">Adaptação de layouts prontos</div>
+                                                    <div class="text sub-heading">Publicação e pequenas alterações de conteúdo</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more-infor">
+                                        <div class="worldwide text-body-2">
+                                            <i class="icon icon-global"></i>
+                                            Atendimento <span>Global</span>
+                                        </div>
+                                        <a class="text-body-1 link" href="#contact">
+                                            Fale comigo
+                                            <i class="icon icon-arrow-top-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-gradient1 img_bg-2"></div>
+                <!-- /section-services -->
+                <!-- section-about -->
+                <section class="section-has-dot section-about v2" id="about">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="heading">
+                                        <div class="text-body-2 dot-before subtitle fw-medium">Sobre mim</div>
+                                        <div>
+                                            <h2 class="fw-medium title text-color-change">Por trás de cada bom design, existe uma história ainda melhor</h2>
+                                            <div class="text-body-2 text">Todo design nasce de um ponto de partida — de uma ideia, uma vivência ou uma inspiração.
+Para mim, criar não é apenas montar elementos visuais, mas dar forma a algo que realmente comunique.
+Acredito que cada projeto precisa carregar intenção, significado e propósito.
+E é entendendo a história por trás de cada criação que consigo transformar ideias em algo que realmente conecta.</div>
+                                        </div>
+                                    </div>
+                                    <div class="box-playground">
+                                        <div class="top">
+                                            <div class="text-body-1 fw-medium instagram-tag">@Corazzione</div>
+                                            <div class="box-nav style-1">
+                                                <div class="nav-sw navigation-prev-playground">
+                                                    <span class="icon icon-angle-left-solid"></span>
+                                                </div>
+                                                <div class="nav-sw navigation-next-playground">
+                                                    <span class="icon icon-angle-right-solid"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wrap-swiper">
+                                            <div class="swiper slider-playground swiper-auto">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-1.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-1.jpg" data-src="asset/images/section/playground-1.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-2.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-2.jpg" data-src="asset/images/section/playground-2.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-3.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-3.jpg" data-src="asset/images/section/playground-3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-4.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-4.jpg" data-src="asset/images/section/playground-4.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-1.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-1.jpg" data-src="asset/images/section/playground-1.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-2.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-2.jpg" data-src="asset/images/section/playground-2.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-3.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-3.jpg" data-src="asset/images/section/playground-3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="asset/images/section/playground-4.jpg" data-lightbox="example-2">
+                                                            <img class="lazyload" src="asset/images/section/playground-4.jpg" data-src="asset/images/section/playground-4.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-about -->
+                <!-- section-tech-stack -->
+                <section class="section-has-dot section-tech-stack v2">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="text-display-2 fw-medium heading split-text effect-right text-center">Ferramentas</div>
+                                    <div class="swiper slider-tech-stack1 style-1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="tech-stack-item">
+                                                    <h3 class="fw-medium title">Jetbrains</h3>
+                                                    <div class="image">
+                                                        <img src="asset/images/section/jetbrains.png" alt="">
+                                                    </div>
+                                                    <div class="text-body-1">Ferramenta completa para produtividade em código</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="tech-stack-item">
+                                                    <h3 class="fw-medium title">Adobe Illustrator</h3>
+                                                    <div class="image">
+                                                        <img src="asset/images/section/illustrator.png" alt="">
+                                                    </div>
+                                                    <div class="text-body-1">Criação de artes vetoriais e estampas profissionais</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="tech-stack-item">
+                                                    <h3 class="fw-medium title">GitHub</h3>
+                                                    <div class="image">
+                                                        <img src="asset/images/section/github.png" alt="">
+                                                    </div>
+                                                    <div class="text-body-1">Controle de versão e colaboração em projetos</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="tech-stack-item">
+                                                    <h3 class="fw-medium title">Adobe Photoshop</h3>
+                                                    <div class="image">
+                                                        <img src="asset/images/section/photoshop.png" alt="">
+                                                    </div>
+                                                    <div class="text-body-1">Manipulação, tratamento e edição visual.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="tech-stack-item">
+                                                    <h3 class="fw-medium title">Adobe Premiere</h3>
+                                                    <div class="image">
+                                                        <img src="asset/images/section/premiere.png" alt="">
+                                                    </div>
+                                                    <div class="text-body-1">Edição rápida de vídeos e conteúdo digital</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination pagination-tech-stack1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-tech-stack -->
+                <!--
+                 section-partner 
+                <div class="section-has-dot section-partners v2">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="text-body-2 dot-before subtitle fw-medium style-center">Work with <span class="fw-medium text-white">60+ brands</span> worldwide</div>
+                                    <div class="swiper slider-partners swiper-auto swiper-overplay">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="lazyload" data-src="asset/images/partners/partner-1.png" src="asset/images/partners/partner-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="lazyload" data-src="asset/images/partners/partner-2.png" src="asset/images/partners/partner-2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="lazyload" data-src="asset/images/partners/partner-3.png" src="asset/images/partners/partner-3.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="lazyload" data-src="asset/images/partners/partner-4.png" src="asset/images/partners/partner-4.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="lazyload" data-src="asset/images/partners/partner-5.png" src="asset/images/partners/partner-5.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="lazyload" data-src="asset/images/partners/partner-6.png" src="asset/images/partners/partner-6.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="lazyload" data-src="asset/images/partners/partner-7.png" src="asset/images/partners/partner-7.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section-partner
+            -->
+                <!-- section-testimonial -->
+                <section class="section-has-dot section-testimonial v2" id="testimonial">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="section-testimonial-inner">
+                                    <div class="text-body-2 dot-before subtitle fw-medium">Depoimentos</div>
+                                    <div class="testimonial-wrap">
+                                        <div class="swiper slider-testimonial">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <h3 class="fw-medium text">Trabalhar com ele foi super tranquilo. Comunicativo, dedicado e sempre buscando melhorar. O resultado ficou acima do que eu esperava!”</h3>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <h3 class="fw-medium text">“Gostei muito da atenção aos detalhes. Mesmo sendo iniciante, mostrou profissionalismo e entregou exatamente o que eu precisava.”</h3>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <h3 class="fw-medium text">“Ótima experiência! Explicou tudo de forma clara, entregou no prazo e fez ajustes rapidamente. Recomendo de olhos fechados.”</h3>
+                                                </div>
+                                            </div>
+                                            <div class="box-nav style-2">
+                                                <div class="nav-sw navigation-prev-testimonial">
+                                                    <span class="icon icon-angle-left-solid"></span>
+                                                </div>
+                                                <div class="swiper-pagination pagination-testimonial"></div>
+                                                <div class="nav-sw navigation-next-testimonial">
+                                                    <span class="icon icon-angle-right-solid"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="customer-wrap">
+                                        <div class="swiper slider-customer">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="customer-info">
+                                                        <div class="image">
+                                                            <img class="lazyload" src="asset/images/avatar/avatar-2.jpg" data-src="asset/images/avatar/avatar-2.jpg" alt="">
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="name fw-medium">
+                                                                <a href="#" class="link">Marina Duarte</a>
+                                                            </h6>
+                                                            <div class="text-body-2 info">Empreendedora</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="customer-info">
+                                                        <div class="image">
+                                                            <img class="lazyload" src="asset/images/avatar/avatar-3.jpg" data-src="asset/images/avatar/avatar-3.jpg" alt="">
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="name fw-medium">
+                                                                <a href="#" class="link">Rafael Moretti</a>
+                                                            </h6>
+                                                            <div class="text-body-2 info">Criador de conteúdo</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="customer-info">
+                                                        <div class="image">
+                                                            <img class="lazyload" src="asset/images/avatar/avatar-4.jpg" data-src="asset/images/avatar/avatar-4.jpg" alt="">
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="name fw-medium">
+                                                                <a href="#" class="link">Clara Menezes</a>
+                                                            </h6>
+                                                            <div class="text-body-2 info">Freelancer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-testimonial -->
+                <!-- section-partners -->
+                 <!-- 
+                <section class="section-has-dot section-partners v3" id="partners">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="text-body-2 dot-before subtitle">Awards</div>
+                                    <h4 class="desc text-color-change text-tab">
+                                        <span></span> My awards represent our ongoing pursuit of quality and innovation. Each accolade reflects our team's expertise
+                                    </h4>
+                                    <div class="swiper slider-partners2 swiper-auto">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="partners-item type-lg">
+                                                    <img src="asset/images/partners/partner-8.svg" alt="">
+                                                    <div class="text-body-2 text">SOTD <br> E-commerce</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="partners-item type-lg">
+                                                    <img src="asset/images/partners/partner-9.svg" alt="">
+                                                    <div class="text-body-2 text">Site of the Days</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="partners-item type-lg">
+                                                    <img src="asset/images/partners/partner-10.svg" alt="">
+                                                    <div class="text-body-2 text">Independent of <br> the 2024</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                -->
+                <!-- /section-partners -->
+                <!-- section-process -->
+                <section class="section-has-dot section-process v2">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="text-display-2 fw-medium heading split-text effect-right text-center">Processo de trabalho</div>
+                                    <div class="swiper slider-process1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="process-item">
+                                                    <div class="content">
+                                                        <div class="step text-body-2 fw-medium dot-before type-tags">Passo 1</div>
+                                                        <div class="wrap">
+                                                            <h2 class="fw-medium title">Briefing & <br> alinhamento</h2>
+                                                            <div class="text-body-2 fw-medium text">Entendo seu negócio, objetivos da landing page e defino o escopo do projeto com você.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="image">
+                                                        <div class="gradient-icon gradient-icon-1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="process-item">
+                                                    <div class="content">
+                                                        <div class="step text-body-2 fw-medium dot-before type-tags">Passo 2</div>
+                                                        <div class="wrap">
+                                                            <h2 class="fw-medium title">Estrutura e Wireframe</h2>
+                                                            <div class="text-body-2 fw-medium text"> Organizo as seções da página, crio o fluxo de navegação e a estrutura focada em conversão</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="image">
+                                                        <div class="gradient-icon gradient-icon-2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="process-item">
+                                                    <div class="content">
+                                                        <div class="step text-body-2 fw-medium dot-before type-tags">Passo 3</div>
+                                                        <div class="wrap">
+                                                            <h2 class="fw-medium title">Design & Desenvolvimento</h2>
+                                                            <div class="text-body-2 fw-medium text">Transformo o layout em código, ajustando texto, imagens e animações para deixar tudo fluido.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="image">
+                                                        <div class="gradient-icon gradient-icon-3"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="process-item">
+                                                    <div class="content">
+                                                        <div class="step text-body-2 fw-medium dot-before type-tags">Passo 4</div>
+                                                        <div class="wrap">
+                                                            <h2 class="fw-medium title">Testes &<br> Entrega final</h2>
+                                                            <div class="text-body-2 fw-medium text">Testo a landing page em diferentes dispositivos, corrijo detalhes e faço a entrega pronta para publicar.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="image">
+                                                        <div class="gradient-icon gradient-icon-4"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-process -->
+                <!-- section-pricing -->
+                <section class="section-has-dot section-pricing v2" id="pricing">
+                    <span></span>
+                    <div class="tf-container wg-tabs">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="heading">
+                                        <div class="text-display-2 fw-medium title split-text effect-right">Meu preço</div>
+                                        <div class="menu-tab style-1">
+                                            <div class="item text-body-2 active">Padrão</div>
+                                            <div class="item text-body-2">Premium</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-content-tab">
+                                        <div class="widget-content-inner active">
+                                            <div class="pricing-item wow fadeInUp">
+                                                <div class="top">
+                                                    
+                                                    <h6 class="dot-before fw-medium title">Plano padrão</h6>
+                                                    <div class="text-body-1 fw-medium text">Tem um design pronto para transformar em código? Ou orçamento mais limitado?</div>
+                                                    <div class="price">
+                                                        <div class="text-display-2 fw-medium number">R$149</div>
+                                                        <span>/ hora</span>
+                                                    </div>
+                                                </div>
+                                                <div class="list-desc">
+                                                    <div class="desc text-body-1">Você envia o layout (Figma, XD ou imagem)</div>
+                                                    <div class="desc text-body-1">Desenvolvimento de landing page</div>
+                                                    <div class="desc text-body-1">Implementação em HTML/CSS/JS ou WordPress</div>
+                                                    <div class="desc text-body-1">Integração básica (formulário, WhatsApp, captura de leads)</div>
+                                                    <div class="desc text-body-1">Trabalho remoto</div>
+                                                    <div class="desc text-body-1">Suporte por 1 mês após a entrega</div>
+                                                </div>
+                                                <div class="bot-btn">
+                                                    <a href="#contact" class="text-body-2 fw-medium">
+                                                        Get Started
+                                                        <i class="icon icon-arrow-top-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-inner">
+                                            <div class="pricing-item">
+                                                <div class="top">
+                                                    
+                                                    <h6 class="dot-before fw-medium title">Premium Plan</h6>
+                                                    <div class="text-body-1 fw-medium text">Tem um design pronto para transformar em código? Ou orçamento mais limitado?</div>
+                                                    <div class="price">
+                                                        <div class="text-display-2 fw-medium number">R$249</div>
+                                                        <span>/ hora</span>
+                                                    </div>
+                                                </div>
+                                                <div class="list-desc">
+                                                    <div class="desc text-body-1">Desenvolvimento completo da landing page</div>
+                                                    <div class="desc text-body-1">Animações, microinterações e seções personalizadas</div>
+                                                    <div class="desc text-body-1">Implementação em React, Next.js ou WordPress avançado</div>
+                                                    <div class="desc text-body-1">SEO inicial + otimização de performance</div>
+                                                    <div class="desc text-body-1">Prioridade na fila de projetos</div>
+                                                    <div class="desc text-body-1">Suporte por 3 meses após a entrega</div>
+                                                </div>
+                                                <div class="bot-btn">
+                                                    <a href="#contact" class="text-body-2 fw-medium">
+                                                       Começar
+                                                        <i class="icon icon-arrow-top-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <a href="#contact" class="custom-quote fw-medium h3 wow fadeInUp" data-wow-delay="0.1s">
+                                        Proposta personalizada
+                                        <i class="icon icon-arrow-top-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-pricing -->
+                <!-- section-faqs -->
+                <section class="section-has-dot section-faqs" id="faqs">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="text-display-2 fw-medium heading split-text effect-right text-center">FAQs</div>
+                                    <div class="accordion-wrap" id="accordion-1">
+                                        <div class="item active accordion-item scrolling-effect effectLeft" data-bs-toggle="collapse" role="button" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            <h6 class="accordion-head fw-medium">
+                                                Como funciona o meu processo de desenvolvimento?
+                                                <span class="icon"></span>
+                                            </h6>
+                                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordion-1">
+                                                <p class="text-body-2 fw-medium">
+                                                   Exploro a ideia inicial, defino o escopo, crio um protótipo simples e depois passo para o desenvolvimento prático. Mantenho comunicação constante para ajustes rápidos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item accordion-item collapsed scrolling-effect effectLeft" data-bs-toggle="collapse" role="button" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            <h6 class="accordion-head fw-medium">
+                                                Qual o prazo médio para entregar um projeto?
+                                                <span class="icon"></span>
+                                            </h6>
+                                            <div id="collapse2" class="accordion-collapse collapse " data-bs-parent="#accordion-1">
+                                                <p class="text-body-2 fw-medium">
+                                                 Dependendo da complexidade, pequenos projetos (como landing pages ou ajustes) levam de 3 a 7 dias. Projetos maiores podem levar algumas semanas.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item accordion-item collapsed scrolling-effect effectLeft" data-bs-toggle="collapse" role="button" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            <h6 class="accordion-head fw-medium">
+                                                Quais serviços eu ofereço?
+                                                <span class="icon"></span>
+                                            </h6>
+                                            <div id="collapse3" class="accordion-collapse collapse " data-bs-parent="#accordion-1">
+                                                <p class="text-body-2 fw-medium">
+                                                Desenvolvimento de sites simples, landing pages, pequenos sistemas, melhorias de código, refatoração e ajustes de layout. Também posso ajudar com integração de APIs básicas.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item accordion-item collapsed scrolling-effect effectLeft" data-bs-toggle="collapse" role="button" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                            <h6 class="accordion-head fw-medium">
+                                                E se você não gostar do resultado?
+                                                <span class="icon"></span>
+                                            </h6>
+                                            <div id="collapse4" class="accordion-collapse collapse " data-bs-parent="#accordion-1">
+                                                <p class="text-body-2 fw-medium">
+                                                    Faço ajustes dentro do escopo combinado até chegarmos em algo que te agrade. Feedback é sempre bem-vindo durante todo o processo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item accordion-item collapsed scrolling-effect effectLeft" data-bs-toggle="collapse" role="button" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                            <h6 class="accordion-head fw-medium">
+                                                Posso pedir reembolso?
+                                                <span class="icon"></span>
+                                            </h6>
+                                            <div id="collapse5" class="accordion-collapse collapse " data-bs-parent="#accordion-1">
+                                                <p class="text-body-2 fw-medium">
+                                                   Projetos só têm reembolso antes de qualquer etapa técnica começar. Após iniciar o desenvolvimento, posso oferecer ajustes, revisões e melhorias para garantir que você fique satisfeito.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ask-me text-center">
+                                        <div class="text-body-2 fw-medium text">Tem outra pergunta?</div>
+                                        <a href="#contact" class="text-body-2 fw-medium link">Pergunte a mim diretamente</a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-faqs -->
+                <!-- section-contact -->
+                <section class="section-has-dot section-contact" id="contact">
+                    <span></span>
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                                <div class="wrap-section">
+                                    <div class="section-contact-inner type-lg">
+                                        <div class="text-body-2 dot-before subtitle">Formulário de contato</div>
+                                        <h1 class="fw-medium heading">Contato para trabalho</h1>
+                                        <form action="https://formsubmit.co/corazzione@gmail.com" method="POST" class="form-contact" id="form-contact">
+                                            <fieldset class="fiel-mail">
+                                                <label class="text-xs-2">Seu Email</label>
+                                                <input type="email" name="mail" id="mail" placeholder="Coloque seu melhor email" value="" aria-required="true" required>
+                                            </fieldset>
+                                            <fieldset class="fiel-phone">
+                                                <label class="text-xs-2">Seu telefone</label>
+                                                <input type="text" name="phone" id="phone" placeholder="Coloque seu melhor telefone" value="" aria-required="true" required>
+                                            </fieldset>
+                                            <fieldset class="fiel-text">
+                                                <label class="text-xs-2">Mensagem</label>
+                                                <textarea placeholder="" aria-required="true" id="message" required name="message"></textarea>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label class="text-xs-2">Orçamento estimado</label>
+                                                <div class="pricing-list list-choose">
+                                                    <div class="item text-body-2 choose-item font-poppins" data-budget="&lt; R$1,000">&lt; R$1,000</div>
+                                                    <div class="item text-body-2 choose-item font-poppins" data-budget="R$1,000 - R$5,000">R$1,000 - R$5,000</div>
+                                                    <div class="item text-body-2 choose-item font-poppins" data-budget="R$5,000 - R$10,000">R$5,000 - R$10,000</div>
+                                                    <div class="item text-body-2 choose-item font-poppins" data-budget="R$10,000 - R$20,000">R$10,000 - R$20,000</div>
+                                                    <div class="item text-body-2 choose-item font-poppins" data-budget="&gt; R$20,000">&gt; R$20,000</div>
+                                                </div>
+                                                <input type="hidden" name="budget" id="budget" value="Não informado">
+                                            </fieldset>
+                                            <div class="bot-btn send-wrap">
+                                                <button type="submit" class="text-body-2 fw-medium">
+                                                    <span class="font-poppins flex-grow-1 text-start">Começar</span>
+                                                    <i class="icon icon-arrow-top-right"></i>
+                                                </button>
+                                            </div>
+                                            <div id="form-message" style="display:none; margin-top: 15px; padding: 15px; border-radius: 8px; text-align: center;"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /section-contact -->
+            </div>
+            <!-- /wrapper-content -->
+        </div>
+        <!-- /main-content -->
+
+        <!-- footer -->
+        <footer class="tf-footer style-2 section-has-dot">
+            <span></span>
+            <div class="tf-container">
+                <div class="row">
+                    <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8">
+                        <div class="wrap-section">
+                            <div class="text-body-2 dot-before subtitle style-center">Entre em contato</div>
+                            <div class="avatar text-center">
+                                <div class="image avatar-wrap">
+                                    <img class="lazyload" src="asset/images/avatar/avatar-1.png" data-src="asset/images/avatar/avatar-1.png" alt="">
+                                </div>
+                                <h6 class="name fw-medium">Markus Corazzione</h6>
+                                <div class="meta text-body-2">Um estudante dedicado</div>
+                            </div>
+                            <a href="#contact" class="cta">
+                                <img class="lazyload signature" src="asset/images/section/signature-1.png" data-src="asset/images/section/signature-1.png" alt="">
+                <!-- <div class="text-signature">Jayden</div> -->
+                                <div class="infiniteslide_wrap cta-infiniteslide style-1">
+                                    <div class="infiniteslide">
+                                        <div class="marquee-child-item">
+                                            <div class="text-display-2">Agende uma chamada</div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="dot"></div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="text-display-2">Agende uma chamada</div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="dot"></div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="text-display-2">Agende uma chamada</div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="dot"></div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="text-display-2">Agende uma chamada</div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="dot"></div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="text-display-2">Agende uma chamada</div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="dot"></div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="text-display-2">Agende uma chamada</div>
+                                        </div>
+                                        <div class="marquee-child-item">
+                                            <div class="dot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="social-links justify-content-center">
+                                <li>
+                                    <a href="https://x.com/markuscorazon"><i class="icon icon-twitter-x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://dribbble.com/corazzione"><i class="icon icon-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/corazzione"><i class="icon icon-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/corazzione1"><i class="icon icon-facebook-f"></i></a>
+                                </li>
+                            </ul>
+                            <div class="coppyright">
+                                <i class="icon icon-global"></i>
+                                <div class="text-body-3 font-poppins">Copyright por <span class="text-white">Markus Corazzione</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <img src="asset/images/section/img-bg-2.png" alt="" class="map">
+            <div class="box-gradient2"></div>
+        </footer>
+        <!-- /footer -->
+
+        
+      
+    </div>
+    <!-- End Wrapper -->
+
+    <!-- Javascript -->
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/jquery.validate.min.js"></script>
+    <script src="asset/js/lazysize.min.js"></script>
+    <script src="asset/js/wow.min.js"></script>
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script src="asset/js/swiper.js"></script>
+    <script src="asset/js/gsap.min.js"></script>
+    <script src="asset/js/Splitetext.js"></script>
+    <script src="asset/js/ScrollTrigger.min.js"></script>
+    <script src="asset/js/ScrollSmooth.js"></script>
+    <script src="asset/js/handleeffectgsap.js"></script>
+    <script src="asset/js/odometer.min.js"></script>
+    <script src="asset/js/counter.js"></script>
+    
+    <script src="asset/js/infinityslide.js"></script>
+    <script src="asset/js/plugin.js"></script>
+    <script src="asset/js/lightbox.min.js"></script>
+    <script src="asset/js/main.js"></script>
+
+    <script>
+        // Budget selection functionality
+        document.querySelectorAll('.pricing-list .choose-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Remove active class from all items
+                document.querySelectorAll('.pricing-list .choose-item').forEach(el => {
+                    el.classList.remove('active');
+                });
+                // Add active class to clicked item
+                this.classList.add('active');
+                // Update hidden budget field
+                const budgetValue = this.getAttribute('data-budget');
+                document.getElementById('budget').value = budgetValue;
+            });
+        });
+
+        // Form submission
+        document.getElementById('form-contact').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const messageDiv = document.getElementById('form-message');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="font-poppins flex-grow-1 text-start">Enviando...</span><i class="icon icon-arrow-top-right"></i>';
+
+            // Debug: log form data
+            console.log('Enviando formulário com dados:', {
+                mail: formData.get('mail'),
+                phone: formData.get('phone'),
+                message: formData.get('message'),
+                budget: formData.get('budget')
+            });
+
+            // Converter FormData para URLSearchParams para compatibilidade
+            const urlParams = new URLSearchParams();
+            urlParams.append('mail', formData.get('mail'));
+            urlParams.append('phone', formData.get('phone'));
+            urlParams.append('message', formData.get('message'));
+            urlParams.append('budget', formData.get('budget'));
+
+            fetch('/asset/contact/contact-process.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: urlParams.toString()
+            })
+            .then(response => {
+                console.log('Response status:', response.status);
+                console.log('Response ok:', response.ok);
+                return response.json().then(data => {
+                    console.log('Response JSON data:', data);
+                    return { status: response.status, data: data };
+                });
+            })
+            .then(({ status, data }) => {
+                console.log('Processando resposta:', { status, data });
+                messageDiv.style.display = 'block';
+                
+                // Limpar HTML anterior
+                messageDiv.innerHTML = '';
+                
+                if (data.success === true || status === 200) {
+                    // Sucesso - verde
+                    messageDiv.style.backgroundColor = 'rgba(76, 175, 80, 0.15)';
+                    messageDiv.style.borderLeft = '4px solid #4CAF50';
+                    messageDiv.style.color = '#4CAF50';
+                    messageDiv.style.padding = '15px';
+                    messageDiv.style.borderRadius = '8px';
+                    messageDiv.style.marginTop = '15px';
+                    messageDiv.style.display = 'flex';
+                    messageDiv.style.alignItems = 'center';
+                    messageDiv.style.justifyContent = 'space-between';
+                    
+                    const textSpan = document.createElement('span');
+                    textSpan.textContent = '✓ ' + (data.message || 'Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                    messageDiv.appendChild(textSpan);
+                    
+                    const closeBtn = document.createElement('button');
+                    closeBtn.type = 'button';
+                    closeBtn.textContent = '✕';
+                    closeBtn.style.background = 'none';
+                    closeBtn.style.border = 'none';
+                    closeBtn.style.color = '#4CAF50';
+                    closeBtn.style.fontSize = '20px';
+                    closeBtn.style.cursor = 'pointer';
+                    closeBtn.style.padding = '0';
+                    closeBtn.style.marginLeft = '15px';
+                    closeBtn.addEventListener('click', function() {
+                        messageDiv.style.display = 'none';
+                    });
+                    messageDiv.appendChild(closeBtn);
+                    
+                    // Reset form após 3 segundos
+                    setTimeout(() => {
+                        document.getElementById('form-contact').reset();
+                        document.querySelectorAll('.pricing-list .choose-item').forEach(el => {
+                            el.classList.remove('active');
+                        });
+                        document.getElementById('budget').value = 'Não informado';
+                        messageDiv.style.display = 'none';
+                    }, 3000);
+                } else {
+                    // Erro - vermelho
+                    messageDiv.style.backgroundColor = 'rgba(244, 67, 54, 0.15)';
+                    messageDiv.style.borderLeft = '4px solid #F44336';
+                    messageDiv.style.color = '#F44336';
+                    messageDiv.style.padding = '15px';
+                    messageDiv.style.borderRadius = '8px';
+                    messageDiv.style.marginTop = '15px';
+                    messageDiv.style.display = 'flex';
+                    messageDiv.style.alignItems = 'center';
+                    messageDiv.style.justifyContent = 'space-between';
+                    
+                    const textSpan = document.createElement('span');
+                    textSpan.textContent = '✗ ' + (data.message || 'Erro ao enviar mensagem. Por favor, tente novamente.');
+                    messageDiv.appendChild(textSpan);
+                    
+                    const closeBtn = document.createElement('button');
+                    closeBtn.type = 'button';
+                    closeBtn.textContent = '✕';
+                    closeBtn.style.background = 'none';
+                    closeBtn.style.border = 'none';
+                    closeBtn.style.color = '#F44336';
+                    closeBtn.style.fontSize = '20px';
+                    closeBtn.style.cursor = 'pointer';
+                    closeBtn.style.padding = '0';
+                    closeBtn.style.marginLeft = '15px';
+                    closeBtn.addEventListener('click', function() {
+                        messageDiv.style.display = 'none';
+                    });
+                    messageDiv.appendChild(closeBtn);
+                }
+            })
+            .catch(error => {
+                console.error('Erro na requisição:', error);
+                messageDiv.style.display = 'block';
+                messageDiv.style.backgroundColor = 'rgba(244, 67, 54, 0.15)';
+                messageDiv.style.borderLeft = '4px solid #F44336';
+                messageDiv.style.color = '#F44336';
+                messageDiv.style.padding = '15px';
+                messageDiv.style.borderRadius = '8px';
+                messageDiv.style.marginTop = '15px';
+                messageDiv.style.display = 'flex';
+                messageDiv.style.alignItems = 'center';
+                messageDiv.style.justifyContent = 'space-between';
+                
+                messageDiv.innerHTML = '';
+                const textSpan = document.createElement('span');
+                textSpan.textContent = '✗ Erro ao enviar formulário. Verifique sua conexão e tente novamente.';
+                messageDiv.appendChild(textSpan);
+                
+                const closeBtn = document.createElement('button');
+                closeBtn.type = 'button';
+                closeBtn.textContent = '✕';
+                closeBtn.style.background = 'none';
+                closeBtn.style.border = 'none';
+                closeBtn.style.color = '#F44336';
+                closeBtn.style.fontSize = '20px';
+                closeBtn.style.cursor = 'pointer';
+                closeBtn.style.padding = '0';
+                closeBtn.style.marginLeft = '15px';
+                closeBtn.addEventListener('click', function() {
+                    messageDiv.style.display = 'none';
+                });
+                messageDiv.appendChild(closeBtn);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
+        });
+
+        // Close flat-alert messages when clicking the close button
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.flat-alert .close')) {
+                e.preventDefault();
+                const alert = e.target.closest('.flat-alert');
+                if (alert) {
+                    alert.style.display = 'none';
+                    alert.remove();
+                }
+            }
+        });
+    </script>
+    <!-- /Javascript -->
+
+</body>
+
+</html>
