@@ -295,8 +295,12 @@
         $(document).scroll(function () {
             sectionIds.each(function () {
                 let container = $(this).attr('href');
-                let containerOffset = $(container).offset().top;
-                let containerHeight = $(container).outerHeight();
+                let element = $(container);
+                // Verifica se o elemento existe antes de acessar
+                if (element.length === 0) return;
+                
+                let containerOffset = element.offset().top;
+                let containerHeight = element.outerHeight();
                 let containerBottom = containerOffset + containerHeight;
                 let scrollPosition = $(document).scrollTop();
                 if (scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) {
