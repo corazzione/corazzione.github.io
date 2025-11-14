@@ -1393,15 +1393,13 @@ E é entendendo a história por trás de cada criação que consigo transformar 
         });
 
         // Form submission - apenas gerencia o visual
+        // NÃO bloqueia o envio - FormSubmit.co faz o trabalho
         document.getElementById('form-contact').addEventListener('submit', function(e) {
             const submitBtn = this.querySelector('button[type="submit"]');
             
             // Show loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span class="font-poppins flex-grow-1 text-start">Enviando...</span><i class="icon icon-arrow-top-right"></i>';
-            
-            // Deixa o formulário submeter naturalmente para FormSubmit.co
-            // Não usa e.preventDefault()
         });
 
         // Close flat-alert messages when clicking the close button
